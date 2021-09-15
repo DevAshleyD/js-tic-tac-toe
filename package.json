@@ -1,0 +1,37 @@
+{
+  "name": "js-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "JS version of the tic-tac-toe exercise. 3-in-1!",
+  "repository": "https://github.com/thoughtbot/js-oo-tic-tac-toe",
+  "author": "Kane Baccigalupi",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.9.0",
+    "babel-jest": "^27.2.0",
+    "babel-loader": "^8.0.6",
+    "jsdom": "^16.2.1",
+    "mocha": "^7.1.1",
+    "sinon": "^9.0.1",
+    "standard": "^14.3.3",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "compile": "node_modules/.bin/webpack --mode development",
+    "lint": "node_modules/.bin/standard --fix",
+    "test": "node_modules/.bin/mocha --recursive --require @babel/register && node_modules/.bin/standard"
+  },
+  "standard": {
+    "ignore": [
+      "dist/**/*"
+    ],
+    "globals": [
+      "describe",
+      "it"
+    ]
+  },
+  "dependencies": {}
+}
